@@ -13,7 +13,7 @@ if [ $RET -gt 0 ]; then
   bin/rails db:migrate
   bin/rails db:test:prepare
   echo "=~=~=~=~=~=~= Seeding the database =~=~=~=~=~=~="
-  bin/rails db:seed
+  bin/rails db:seed &
 fi
 echo "=~=~=~=~=~=~= Removing the old server PID =~=~=~=~=~=~="
 rm -f tmp/pids/server.pid
