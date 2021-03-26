@@ -7,6 +7,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'rails', '~> 5.2.0'
+
 # Statistics tracking
 gem 'newrelic_rpm'
 gem 'rack-tracker'
@@ -18,7 +20,6 @@ gem 'faker', git: 'https://github.com/stympy/faker.git', branch: 'master'
 gem 'jquery-rails'
 gem 'will_paginate'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -26,6 +27,7 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+# gem 'mimemagic', '~> 0.3.7', git: 'https://github.com/mimemagicrb/mimemagic.git', branch: '0.3'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
