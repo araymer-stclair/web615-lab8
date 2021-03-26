@@ -18,6 +18,7 @@ services:
         UID: ${UID:-1001}
     volumes:
       - ./:/usr/src/app
+      - db/test.sqlite3
     depends_on:
       - app
       - redis
