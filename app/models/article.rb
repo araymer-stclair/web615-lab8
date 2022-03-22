@@ -17,6 +17,8 @@ class Article < ApplicationRecord
   has_many :comments
   belongs_to :user
 
+  ALLOWED_CATEGORIES = ["World News", "Local News", "New From Below"]
+
   validates :title, presence: true
   validates :content, presence: true
 end

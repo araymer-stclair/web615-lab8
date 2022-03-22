@@ -10,7 +10,6 @@ end
 gem 'rails', '~> 5.2.0'
 
 # Statistics tracking
-gem 'newrelic_rpm'
 gem 'rack-tracker'
 
 gem 'bootstrap-sass'
@@ -51,6 +50,7 @@ group :development, :test do
   gem 'launchy'
   gem 'rspec-rails', '~> 3.7'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
 
 group :test do
@@ -75,10 +75,6 @@ group :development do
   gem 'guard' # Watches for files to change
   gem 'guard-rails', require: false # Rails bindings
   gem 'guard-rspec', require: false # Adds rspec bindings
-end
-
-group :production do
-  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
